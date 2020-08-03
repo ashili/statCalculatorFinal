@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script defer src="{{url_for('static', filename='app.js')}}"></script>
+
+    <title>Satatistics Calculator</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="{{url_for('static', filename='calc.png')}} "
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+          loading="lazy"
+        />
+        <span class="title">Statistics Calculator Project</span>
+      </a>
+    </nav>
+
+    <main>
+      <div class="inputarea">
+        <textarea
+          name="numbers"
+          id="numbers"
+          cols="30"
+          rows="10"
+          placeholder="Enter You numbers"
+        ></textarea>
+        <h3>Enter numbers separated by a comma</h3>
+      </div>
+
+      <div class="result">
+        <div class="result-line">
+          <span class="result-item">Min : </span><input type="text" />
+        </div>
+        <br />
+        <div class="result-line">
+          <span class="result-item">Max : </span><input type="text" />
+        </div>
+        <br />
+        <div class="result-line">
+          <span class="result-item">Sum : </span><input type="text" />
+        </div>
+        <br />
+        <div class="result-line">
+          <span class="result-item">Mean : </span><input type="text" />
+        </div>
+        <br />
+        <div class="result-line">
+          <span class="result-item">Mode : </span><input type="text" />
+        </div>
+        <br />
+        <div class="result-line">
+          <span class="result-item">STD DEV : </span><input type="text" />
+        </div>
+        <br />
+        <div class="result-line">
+          <span class="result-item">Variance : </span><input type="text" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
