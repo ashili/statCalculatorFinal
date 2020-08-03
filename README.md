@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/ashili/StatCalculator.svg?branch=master)](https://travis-ci.org/ashili/StatCalculator)
 ##### Project Outline
 
-1. Calculator Object
+1. Calculator Object:
 	1. Properties
 		1. Result
 	2. Class Methods
